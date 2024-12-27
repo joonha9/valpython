@@ -6,7 +6,7 @@ import base64
 app = Flask(__name__)
 
 # Encode the default Excel file in Base64
-with open("/Users/sh1004/Desktop/Project Folder/Comps Data.xlsx", "rb") as f:
+with open("Comps Data.xlsx", "rb") as f:
     encoded_excel = base64.b64encode(f.read()).decode('utf-8')
 
 @app.route('/')
